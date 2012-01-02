@@ -1,0 +1,21 @@
+<div id="comments" class="clearfix">
+	<h3 id="comments-title"><txp:gho_comments_invite zero='<txp:text item="yoko_no_comments" />' one=' <txp:text item="yoko_one_comment" />' more=' <txp:text item="yoko_more_comments" />' nocomment='<txp:text item="yoko_comments_closed" />' /></h3>
+	<p class="write-comment-link">
+		<a href="#respond"><txp:gho_comments_invite zero='<txp:text item="yoko_no_comments" />' one=' <txp:text item="yoko_one_comment" />' more=' <txp:text item="yoko_more_comments" />' nocomment='<txp:text item="yoko_comments_closed" />' />&rarr;</a>
+	</p>
+	<ol class="commentlist">
+		<txp:comments form="yoko_comments" />
+		<txp:if_comments_preview>
+		<div id="cpreview" <txp:chh_if_data>
+			style="background-color:<txp:variable name="preview_highlight_color" />"</txp:chh_if_data>>
+			<h5><txp:text item="yoko_comment_preview_headline" />:</h5>
+			<p>
+				<txp:text item="yoko_comment_preview" />
+			</p>
+			<txp:comments_preview form="yoko_comments" />
+		</div>
+		</txp:if_comments_preview>
+		<txp:comments_form form="yoko_comment_form" />
+	</div>
+	<!-- end comments -->
+</ol>

@@ -1,0 +1,7 @@
+<txp:if_comments_preview>
+<div id="cpreview" style="background-color:<txp:variable name="preview_highlight_color" />">
+	<b><txp:text item="yoko_comment_preview" /></b>
+	<txp:comments_preview form="yoko_comments"/>
+	<txp:comments_form/>
+</div>
+</txp:if_comments_preview>

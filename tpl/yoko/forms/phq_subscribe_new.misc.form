@@ -1,0 +1,4 @@
+<txp:text item="yoko_subscribe_invite" /> "<txp:title />"
+<txp:phq_subscribe_url />
+
+<txp:text item="yoko_read_article" /> <txp:permlink />.

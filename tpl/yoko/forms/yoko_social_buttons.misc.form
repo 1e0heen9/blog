@@ -1,0 +1,9 @@
+<div class="social-btn-bottom">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="<txp:variable name="twitter_name" />"><txp:text item="yoko_tweet" /></a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+<g:plusone size="medium"></g:plusone>
+
+<iframe src="http://www.facebook.com/plugins/like.php?href=<txp:sho_rawurlencode><txp:permlink /></txp:sho_rawurlencode>&amp;layout=button_count&amp;show_faces=false&amp;width=120&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowtransparency="true" style="border:none; overflow:hidden; width:120px; float:left; height:21px"></iframe>
+
+		</div>
+<!-- end social-btns-bottom -->

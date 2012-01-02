@@ -1,0 +1,97 @@
+<txp:if_plugin name="aks_header" version="0.3">
+<txp:aks_header strip="1" gzip="1" />
+</txp:if_plugin>
+<!DOCTYPE html>
+
+<html dir="ltr" lang="<txp:lang/>">
+
+<head>
+<txp:output_form form="yoko_variable_header" />
+
+<meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<txp:if_individual_article><txp:smd_canonical /></txp:if_individual_article>
+<link rel="home" href="<txp:site_url />" />
+
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+
+<link rel="stylesheet" type="text/css" media="screen" href="<txp:css name="yoko_style" />" />
+<link rel="stylesheet" type="text/css" media="screen" href="<txp:site_url />tpl/yoko/assets/css/slimbox2.css" />
+
+<!--[if lt IE 9]>
+
+<script type="text/javascript" 
+ src="<txp:site_url />tpl/yoko/assets/js/html5.js""></script>
+
+<![endif]-->
+
+<script type="text/javascript"
+ src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" 
+ src="<txp:site_url />tpl/yoko/assets/js/slimbox2.js"></script>
+<meta name='robots' content='index' /> 
+<link rel='index' title='<txp:site_name />' href='<txp:site_url />' /> 
+<meta name="generator" content="Textpattern" /> 
+<link rel="canonical" href="<txp:if_individual_article><txp:permlink /><txp:else /><txp:if_section name=",default,articles"><txp:site_url /><txp:else /><txp:site_url /><txp:section /></txp:if_section></txp:if_individual_article>" />
+
+<txp:if_individual_article>
+<txp:if_keywords>
+<meta name="keywords" content="<txp:keywords />" />
+<txp:else />
+
+<meta name="keywords" content="<txp:variable name="meta_keywords" />" />
+
+</txp:if_keywords>
+
+
+</txp:if_individual_article>
+
+<link rel="icon" href="<txp:site_url />favicon.ico" type="x-icon" />
+
+<txp:if_variable name="feedburner_name" value=''>
+<txp:feed_link flavor="atom" format="link" label="Atom" section="" />
+<txp:feed_link flavor="rss" format="link" label="RSS" section="" />
+<txp:else />
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="http://feeds.feedburner.com/<txp:variable name="feedburner_name" />" />
+</txp:if_variable>
+
+<style type="text/css">
+
+a {color: <txp:variable name="custom_link_color" />!important;}
+
+#content .single-entry-header h1.entry-title {color: <txp:variable name="custom_link_color" />!important;}
+
+input#submit:hover {background-color: <txp:variable name="custom_link_color" />!important;}
+
+#content .page-entry-header h1.entry-title {color: <txp:variable name="custom_link_color" />!important;}
+
+.searchsubmit:hover {background-color: <txp:variable name="custom_link_color" />!important;}
+
+</style>
+
+<title>
+  <txp:if_status>
+     <txp:if_article_list>
+         <txp:if_category>
+			<txp:category title="1" /> <txp:text item="yoko_category_listing" /> <txp:chh_if_data><txp:page_url type="pg" /> </txp:chh_if_data>&bull; <txp:site_name />
+         <txp:else />
+			<txp:if_section name=",default">
+			    <txp:site_name />
+            <txp:else />
+                 <txp:section title="1" /> <txp:chh_if_data><txp:page_url type="pg" /> </txp:chh_if_data><txp:tru_tags_tag_parameter /> &bull; <txp:site_name />
+            </txp:if_section>
+        </txp:if_category>
+    </txp:if_article_list>
+    <txp:if_individual_article>
+    	<txp:title /> &bull; <txp:section title="1" /> &bull; <txp:site_name />
+    </txp:if_individual_article>
+	<txp:else />
+<txp:site_name />: <txp:error_status />
+</txp:if_status>
+</title>
+
+<txp:output_form form="yoko_opengraph" />
+
+</head>

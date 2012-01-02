@@ -1,0 +1,14 @@
+<txp:aks_cache id='header'>
+<header id="branding">
+<txp:output_form form="yoko_mainnav" />
+
+		<hgroup id="site-title">
+
+					<h1><txp:link_to_home><txp:site_name /></txp:link_to_home></h1>
+
+				<h2 id="site-description"><txp:site_slogan /></h2>
+
+				</hgroup><!-- end site-title -->
+										<div class="clear"></div>
+</header><!-- end header -->
+</txp:aks_cache>
