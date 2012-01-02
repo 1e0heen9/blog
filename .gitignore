@@ -1,0 +1,4 @@
+*.bak
+textpattern/config.php
+textpattern/update/*
+~*
